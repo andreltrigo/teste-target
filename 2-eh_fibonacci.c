@@ -19,7 +19,11 @@ int main(void) {
     int a, b, c;
 
     scanf("%d", &n);
-    printf("O número %d %s a sequência fibonacci.\n", n, eh_fibonacci(n) ? "pertence" : "não pertence");
+
+    if (eh_fibonacci(n))
+        printf("O número %d pertence a sequência fibonacci.\n", n);
+    else
+        printf("O número %d não pertence a sequência fibonacci.\n", n);
 
     return 0;
 }
