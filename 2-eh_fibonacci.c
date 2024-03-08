@@ -3,15 +3,15 @@
 int eh_fibonacci(int n) {
     int a, b, c;
 
-    a = 0;
+    a = c = 0;
     b = 1;
-    do {
+    while (c < n) {
         c = a + b;
         a = b;
         b = c;
-    } while (c < n);
+    }
 
-    return (n == c ? 1 : 0);
+    return (c == n ? 1 : 0);
 }
 
 int main(void) {
