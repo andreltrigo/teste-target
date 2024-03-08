@@ -16,14 +16,13 @@ int eh_fibonacci(int n) {
 
 int main(void) {
     int n;
-    int a, b, c;
 
     scanf("%d", &n);
 
     if (eh_fibonacci(n))
-        printf("O número %d pertence a sequência fibonacci.\n", n);
+        printf("O número %d pertence à sequência fibonacci.\n", n);
     else
-        printf("O número %d não pertence a sequência fibonacci.\n", n);
+        printf("O número %d não pertence à sequência fibonacci.\n", n);
 
     return 0;
 }
